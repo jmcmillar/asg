@@ -1,3 +1,6 @@
+$secondBlue: #009FC2;
+$mainBlue: #25355C;
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #333333;
@@ -10,4 +13,8 @@ img {
 
 p {
     color: green;
+}
+
+.navbar .navbar-default {
+    background: $mainBlue;
 }
