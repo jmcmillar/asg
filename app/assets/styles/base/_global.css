@@ -1,20 +1,126 @@
 $secondBlue: #009FC2;
 $mainBlue: #25355C;
 
+a {
+    color: $secondBlue;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #333333;
+    font-family: 'Lato', sans-serif;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
 }
 
-p {
-    color: green;
+.dropdown-menu>li>a {
+    background-color: $mainBlue;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
 }
 
-.navbar .navbar-default {
+.dropdown-menu {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navbar {
+    padding: 0px;
+    border-radius: none;
+
+}
+
+.navbar > .container, .navbar > .container-fluid {
     background: $mainBlue;
+    min-height: 140px;
 }
+.navbar-right {
+    padding-top: 80px;
+}
+
+.navbar .navbar-inverse {
+    margin-bottom: 0px;
+
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.header-btn {
+    background-color: $secondBlue;
+    border-color: $secondBlue;
+}
+
+.footer-title {
+
+    font-family: 'Francois One';
+    font-weight: normal;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.carousel-item {
+    max-height: 400px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main-areas {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("http://asg-thg.com/TestWebsite/wp-content/uploads/2017/11/iStock-542208082.jpg");
+
+    /* Set a specific height */
+    height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.icon-area {
+    height: 80px;
+}
+
+.read-more {
+    font-weight: normal;
+    border: none;
+    background: #25355c;
+    color: #ffffff;
+}
+p.footer-contact {
+    color: white;
+}
+
+ul.footer-links {
+    padding-left: 0px;
+}
+li.footer-items {
+    list-style-type: none;
+    margin-left: 0px;
+}
+
+ul. footer-links li a {
+    font-family: "Francois One", sans-serif;
+}
+
+.footer-gradient {
+    background-color: #013A6B;
+    background-image: -webkit-linear-gradient(150deg, #009FC2 45%, #25355C 35%);
+    min-height: 200px;
+}
+
+
