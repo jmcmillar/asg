@@ -19,6 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar {
     padding: 0px;
+    margin-bottom: 0px;
     border-radius: none;
 
 }
@@ -51,6 +52,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .carousel-item {
     max-height: 400px;
+}
+.carousel-inner {
+    box-shadow: 0 10px 6px -6px rgba(0,0,0,0.8);
 }
 .center {
     display: block;
@@ -97,8 +101,26 @@ ul. footer-links li a {
     font-family: "Francois One", sans-serif;
 }
 .footer-gradient {
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #013A6B;
     background-image: -webkit-linear-gradient(150deg, #009FC2 45%, #25355C 35%);
     min-height: 200px;
+}
+.home-contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(http://asg-thg.com/TestWebsite/wp-content/uploads/2017/05/Working-with-documents-528046146_2122x1416.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+div.col-md-3.members {
+    position: relative;
+}
+.col-md-3.members img {
+    position:absolute;
+    bottom:0;
 }
 
