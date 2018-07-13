@@ -7,6 +7,20 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
 }
+.head-color {
+    color: #009FC2;
+}
+.btn-group  {
+    text-align:center;
+    align-content:center;
+}
+.btn-group {
+    margin: 0 auto;
+    display: block;
+}
+.btn-group>.btn {
+    float: unset;
+}
 .dropdown-menu>li>a {
     background-color: #25355C;
     margin-top: 0px;
@@ -122,5 +136,16 @@ div.col-md-3.members {
 .col-md-3.members img {
     position:absolute;
     bottom:0;
+}
+.img-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.home-about-section {
+    background-color: #013A6B;
+    background-image: -webkit-linear-gradient(150deg, #009FC2 20%, #25355C 35%);
+    height:800px;
+    padding-top: 200px;
+    color: white;
 }
 
