@@ -7,6 +7,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
 }
+/* modal start  */
+.modal-header {
+    padding: 15px;
+    /* border-bottom: 1px solid #e5e5e5; */
+    background: #25355c;
+    color: #ffffff;
+    border-color: #333333;
+}
+/* modal end */
 .head-color {
     color: #009FC2;
 }
@@ -26,6 +35,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0px;
     margin-bottom: 0px;
     color: white;
+}
+#life-sett-services {
+    padding: 30px 50px 30px 50px;
 }
 .dropdown-menu {
     padding-top: 0px;
@@ -84,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url("http://asg-thg.com/TestWebsite/wp-content/uploads/2017/11/iStock-542208082.jpg");
 
     /* Set a specific height */
-    height: 300px;
+    min-height: 200px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
