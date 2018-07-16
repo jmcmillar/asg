@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,7 +12,7 @@
 
 </head>
 <body>
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -23,25 +22,25 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="assets/images/Logo-White-1024x404.png" style="max-width: 200px;" class="img-responsive" alt="brand logo" /></a>
+            <a class="navbar-brand" href="index.html"><img src="assets/images/Logo-White-1024x404.png" style="max-width: 200px;" class="img-responsive" alt="brand logo" /></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-4">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                    <a href="services.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Life Settlment Services</a></li>
-                        <li><a href="#">Legal Administration</a></li>
+                        <li><a href="life-settlement-services.html">Life Settlment Services</a></li>
+                        <li><a href="legal-administration.html">Legal Administration</a></li>
                         <li><a href="#">Consulting Services</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Technology</a></li>
+                <li><a href="technology.html">Technology</a></li>
                 <li><a href="#">News & Events</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li>
                     <a class="btn btn-default header-btn"  data-toggle="collapse" href="#" aria-expanded="false" aria-controls="nav-collapse4">Request Proposal</a>
                 </li>
@@ -50,7 +49,8 @@
     </div><!-- /.container -->
 </nav><!-- /.navbar -->
 </div><!-- /.container-fluid -->
-<body>
+<div class="bodyset">
+<section id="about">
 <div class="container-fluid">
     <div class="col-md-6" style="margin-top: 100px;">
             <img src="assets/images/Working-with-documents.jpeg" alt="" class="img-responsive"/>
@@ -69,6 +69,8 @@
     </div>
 
 </div>
+</section>
+<section id="officers">
 <div class="container">
     <h2 class="text-center">Our Officers</h2>
     <div class="col-md-6">
@@ -92,8 +94,10 @@
     </div>
 
 </div>
+</section>
 
 </body>
+</div>
 <footer class="footer-gradient">
     <div class="container-fluid">
         <div class="col-md-3" style="padding-left: 30px;">

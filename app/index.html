@@ -12,7 +12,7 @@
 
 </head>
 <body>
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -22,25 +22,25 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="assets/images/Logo-White-1024x404.png" style="max-width: 200px;" class="img-responsive" alt="brand logo" /></a>
+            <a class="navbar-brand" href="index.html"><img src="assets/images/Logo-White-1024x404.png" style="max-width: 200px;" class="img-responsive" alt="brand logo" /></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-4">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                <li><a href="about.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                    <li><a href="#">Life Settlment Services</a></li>
-                    <li><a href="#">Legal Administration</a></li>
-                    <li><a href="#">Consulting Services</a></li>
+                        <li><a href="life-settlement-services.html">Life Settlment Services</a></li>
+                        <li><a href="legal-administration.html">Legal Administration</a></li>
+                        <li><a href="#">Consulting Services</a></li>
                     </ul>
-                    </li>
-                <li><a href="#">Technology</a></li>
+                </li>
+                <li><a href="technology.html">Technology</a></li>
                 <li><a href="#">News & Events</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li>
                     <a class="btn btn-default header-btn"  data-toggle="collapse" href="#" aria-expanded="false" aria-controls="nav-collapse4">Request Proposal</a>
                 </li>
@@ -49,6 +49,7 @@
     </div><!-- /.container -->
 </nav><!-- /.navbar -->
 </div><!-- /.container-fluid -->
+<div class="bodyset">
 
 <div id="carousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -57,13 +58,22 @@
         <li data-target="#carousel" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-        <div class="item active">
+        <div class="item active" style="max-height: 400px; height: 350px;">
+            <div class="carousel-caption">
+                <p style="color: #013A6B;" data-animation="animated bounceInLeft">
+                    One Team. One Direction.
+                </p>
+                <h3 style="color: #013A6B;" data-animation="animated bounceInRight">
+                    With ASG, you can rest assured that each task is handled with the utmost precision and care.
+                </h3>
+                <button class="btn btn-default header-btn" data-animation="animated zoomInUp">Learn More</button>
+            </div>
             <img src="assets/images/Slider/meeting-abstract-2.jpg" alt="Slide 1">
         </div>
-        <div class="item">
+        <div class="item" style="max-height: 400px; height: 350px;">
             <img src="assets/images/Slider/Second.jpg" alt="Slide 2">
         </div>
-        <div class="item">
+        <div class="item" style="max-height: 400px; height: 350px;">
             <img src="assets/images/Slider/Businessman-standing-on-a-roof-and-looking-at-city-498929621_2183x1375.jpg" alt="Slide 3">
         </div>
     </div>
@@ -121,6 +131,28 @@
     </div>
 
 </div>
+<div class="container">
+    <h2 class="text-center">Look for ASG at these conferences</h2>
+    <div class="event-home col-md-5">
+        <h4>LISA Fall Conference</h4>
+        <p>October 22-23, 2018</p>
+        <p>Orlando, FL</p>
+    </div>
+
+    <div class="event-home col-md-5">
+        <h4>Fasano Life Settlement and Longevity Conference</h4>
+        <p>November 5, 2018</p>
+        <p>Washington DC</p>
+    </div>
+
+
+
+
+
+
+
+
+</div>
 <div class="container-fluid home-contact">
     <div class="col-md-6"></div>
 
@@ -148,7 +180,7 @@
         <div class="wpcf7-response-output wpcf7-display-none"></div></form></div>
 </div>
 
-
+</div>
 
 <footer class="footer-gradient">
     <div class="container-fluid">
