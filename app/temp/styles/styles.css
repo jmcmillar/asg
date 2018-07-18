@@ -42,6 +42,9 @@ li.tech-menu-item a:hover {
     text-decoration: none;
     color: grey;
 }
+#tech-nav {
+ background: white;
+}
 .btn-group  {
     text-align:center;
     align-content:center;
@@ -78,6 +81,7 @@ li.tech-menu-item a:hover {
 }
 .navbar-right {
     padding-top: 80px;
+    padding-right: 50px;
 }
 .navbar .navbar-inverse {
     margin-bottom: 0px;
@@ -87,16 +91,22 @@ li.tech-menu-item a:hover {
     color: white;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 .header-btn {
     background-color: #009FC2;
     border-color: #009FC2;
     color: white;
-}
-.header-btn {
-    background-color: #009FC2;
-    border-color: #009FC2;
-    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 2.8;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 0.3em;
+    letter-spacing: 0em;
+    box-shadow: 0 0em 0em rgba(0,0,0,0.18);
 }
 @media screen and (min-width: 768px) {
     .carousel-caption {
@@ -131,7 +141,47 @@ div.event-home.col-md-5 {
 
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     margin:10px;
+    padding: 20px;
 
+}
+.vertical-align {
+    min-height: 310px; /*Add a height or minimum height to the containers*/
+    position: relative;
+}
+.vertical-align img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left:auto;
+}
+.slide-btn {
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 159, 194, 0.75);
+    border-radius: 3px;
+    outline: none;
+    box-shadow: rgb(153, 153, 153) 0px 0px 0px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    visibility: inherit;
+    transition: none;
+    text-align: inherit;
+    margin: 0px;
+    padding: 12px 35px;
+    letter-spacing: 0px;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    opacity: 1;
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -webkit-transform-origin: 50% 50% 0px;
+            transform-origin: 50% 50% 0px;
 }
 .parallax {
     /* The image used */
@@ -177,7 +227,7 @@ ul. footer-links li a {
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #013A6B;
-    background-image: -webkit-linear-gradient(150deg, #009FC2 45%, #25355C 35%);
+    background-image: -webkit-linear-gradient(150deg, #009FC2 47%, #25355C 40%);
     min-height: 200px;
 }
 #request-proposal {
