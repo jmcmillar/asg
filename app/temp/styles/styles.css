@@ -207,6 +207,21 @@ section {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+@media screen and (max-width: 550px) {
+    div.col-md-3.hidden-xs-small {
+        display: none;
+    }
+    div.col-md-3.vertical-align {
+        display: none;
+    }
+}
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: 360px;
+}
+.section-title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 .icon-area {
     height: 80px;
 }
