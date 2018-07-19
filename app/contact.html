@@ -28,10 +28,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-4">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li class="dropdown">
-                    <a href="services.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                    <a href="services.html" data-toggle="dropdown">Services <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="life-settlement-services.html">Life Settlment Services</a></li>
                         <li><a href="legal-administration.html">Legal Administration</a></li>
@@ -42,7 +42,7 @@
                 <li><a href="#">News & Events</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li>
-                    <a class="btn btn-default header-btn"  data-toggle="collapse" href="#" aria-expanded="false" aria-controls="nav-collapse4">Request Proposal</a>
+                    <a class="btn btn-default header-btn" href="request-proposal.html">Request Proposal</a>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -67,8 +67,7 @@
 
         </div>
         <div class="col-md-6" style="margin-top: 50px;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.076161680405!2d-97.5256437847447!3d35.55182118022459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b2197fc8147a91%3A0x96d13a0673eeca79!2s521+W+Wilshire+Blvd%2C+Oklahoma+City%2C+OK+73114!5e0!3m2!1sen!2sus!4v1531712068152" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+            <div id="map"></div>
         </div>
 
     </div>
@@ -87,28 +86,300 @@
             </p>
             <p class="footer-title">  Connect with Us<br></p>
 
-            <a href="mailto:#"><i class="fas fa-envelope-square fa-3x"></i></a>
-            <a href="mailto:#"><i class="fab fa-linkedin fa-3x"></i></a>
+            <a href="mailto:info@asgllc.us"><i class="fas fa-envelope-square fa-3x"></i></a>
+            <a href="https://www.linkedin.com/company/asset-servicing-group/"><i class="fab fa-linkedin fa-3x"></i></a>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 hidden-xs-small">
             <p class="footer-title">Services</p>
             <ul class="footer-links">
-                <li class="footer-items"><a href="#">Life Settlement Services</a></li>
-                <li class="footer-items"><a href="#">Claims & Noticing Services</a></li>
-                <li class="footer-items"><a href="#">Technology</a></li>
-                <li class="footer-items"><a href="#">News & Events</a></li>
+                <li class="footer-items"><a href="life-settlement-services.html">Life Settlement Services</a></li>
+                <li class="footer-items"><a href="legal-administration.html">Claims & Noticing Services</a></li>
+                <li class="footer-items"><a href="technology.html">Technology</a></li>
+                <li class="footer-items"><a href="news-events.html">News & Events</a></li>
             </ul>
             <br>
             <br>
             <p class="footer-title">Memberships</p>
             <img src="assets/images/memberships/LISA-WHITE.png" class="img-responsive" alt="LISA Logo"/>
 
+
+        </div>
+        <div class="col-md-3 vertical-align">
+            <img src="assets/images/memberships/ILMA-white.png" class="img-responsive" alt="" />
+        </div>
+        <div class="col-md-3 vertical-align">
+            <img src="assets/images/memberships/NAFER.png" class="img-responsive" alt="" />
         </div>
 
 
     </div>
+    <script>
+        $('.navbar .dropdown > a').click(function(){
+            location.href = this.href;
+        });
+
+    </script>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = {lat: -25.344, lng: 131.036};
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 4, center: uluru});
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({position: uluru, map: map});
+
+            var styles = [
+                {
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#1d2c4d"
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#8ec3b9"
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "color": "#1a3646"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative.country",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "color": "#4b6878"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#64779e"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative.province",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "color": "#4b6878"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape.man_made",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "color": "#334e87"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape.natural",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#023e58"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#283d6a"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#6f9ba5"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "color": "#1d2c4d"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#023e58"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#3C7680"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#304a7d"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#98a5be"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "color": "#1d2c4d"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#2c6675"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "color": "#255763"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#b0d5ce"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "color": "#023e58"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#98a5be"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "color": "#1d2c4d"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.line",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#283d6a"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.station",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#3a4762"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#0e1626"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#4e6d70"
+                        }
+                    ]
+                }
+            ];
+
+        }
+    </script>
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFo2SmDDNSSqvWV7BOdW5asUXfkPAekos&callback=initMap">
+    </script>
 
 </footer>
+
+
+<!--Load the API from the specified URL
+* The async attribute allows the browser to render the page while the API loads
+* The key parameter will contain your own API key (which is not needed for this tutorial)
+* The callback parameter executes the initMap() function
+-->
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

@@ -123,6 +123,11 @@ li.tech-menu-item a:hover {
     padding-bottom: 8px;
 }
 
+#map {
+    width: 100%;
+    height: auto;
+}
+
 .header-btn {
     background-color: $secondBlue;
     border-color: $secondBlue;
@@ -130,9 +135,6 @@ li.tech-menu-item a:hover {
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 700;
-    line-height: 2.8;
-    padding-top: 8px;
-    padding-bottom: 8px;
     border-radius: 0.3em;
     letter-spacing: 0em;
     box-shadow: 0 0em 0em rgba(0,0,0,0.18);
@@ -151,6 +153,12 @@ li.tech-menu-item a:hover {
     font-weight: normal;
     color: #ffffff;
     margin-bottom: 20px;
+}
+
+.modal-title {
+    vertical-align: middle;
+    font-size: 18px;
+    padding-top: 20px;
 }
 
 .carousel-item {
@@ -461,3 +469,43 @@ div.col-md-3.members {
     margin-top: 5px;
 }
 
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-tabs .dropdown-menu,
+.nav-pills .dropdown-menu,
+.navbar .dropdown-menu {
+    margin-top: 0;
+}
+
+.navbar .sub-menu:before {
+    border-bottom: 7px solid transparent;
+    border-left: none;
+    border-right: 7px solid rgba(0, 0, 0, 0.2);
+    border-top: 7px solid transparent;
+    left: -7px;
+    top: 10px;
+}
+
+.navbar .sub-menu:after {
+    border-top: 6px solid transparent;
+    border-left: none;
+    border-right: 6px solid #fff;
+    border-bottom: 6px solid transparent;
+    left: 10px;
+    top: 11px;
+    left: -6px;
+}

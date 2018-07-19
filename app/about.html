@@ -28,10 +28,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-4">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li class="dropdown">
-                    <a href="services.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                    <a href="services.html" data-toggle="dropdown">Services <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="life-settlement-services.html">Life Settlment Services</a></li>
                         <li><a href="legal-administration.html">Legal Administration</a></li>
@@ -42,7 +42,7 @@
                 <li><a href="#">News & Events</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li>
-                    <a class="btn btn-default header-btn"  data-toggle="collapse" href="#" aria-expanded="false" aria-controls="nav-collapse4">Request Proposal</a>
+                    <a class="btn btn-default header-btn" href="request-proposal.html">Request Proposal</a>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -268,31 +268,47 @@
             </p>
             <p class="footer-title">  Connect with Us<br></p>
 
-            <a href="mailto:#"><i class="fas fa-envelope-square fa-3x"></i></a>
-            <a href="mailto:#"><i class="fab fa-linkedin fa-3x"></i></a>
+            <a href="mailto:info@asgllc.us"><i class="fas fa-envelope-square fa-3x"></i></a>
+            <a href="https://www.linkedin.com/company/asset-servicing-group/"><i class="fab fa-linkedin fa-3x"></i></a>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 hidden-xs-small">
             <p class="footer-title">Services</p>
             <ul class="footer-links">
-                <li class="footer-items"><a href="#">Life Settlement Services</a></li>
-                <li class="footer-items"><a href="#">Claims & Noticing Services</a></li>
-                <li class="footer-items"><a href="#">Technology</a></li>
-                <li class="footer-items"><a href="#">News & Events</a></li>
+                <li class="footer-items"><a href="life-settlement-services.html">Life Settlement Services</a></li>
+                <li class="footer-items"><a href="legal-administration.html">Claims & Noticing Services</a></li>
+                <li class="footer-items"><a href="technology.html">Technology</a></li>
+                <li class="footer-items"><a href="news-events.html">News & Events</a></li>
             </ul>
             <br>
             <br>
             <p class="footer-title">Memberships</p>
             <img src="assets/images/memberships/LISA-WHITE.png" class="img-responsive" alt="LISA Logo"/>
 
+
+        </div>
+        <div class="col-md-3 vertical-align">
+            <img src="assets/images/memberships/ILMA-white.png" class="img-responsive" alt="" />
+        </div>
+        <div class="col-md-3 vertical-align">
+            <img src="assets/images/memberships/NAFER.png" class="img-responsive" alt="" />
         </div>
 
 
     </div>
 
-</footer>
+    <script type="text/javascript" src="../index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script>
+        $('.navbar .dropdown > a').click(function(){
+            location.href = this.href;
+        });
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" type="text/javascript"></script>
+    </script>
+</footer>
+</body>
 </html>

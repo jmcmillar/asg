@@ -28,10 +28,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-4">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li class="dropdown">
-                    <a href="services.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                    <a href="services.html" data-toggle="dropdown">Services <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="life-settlement-services.html">Life Settlment Services</a></li>
                         <li><a href="legal-administration.html">Legal Administration</a></li>
@@ -42,7 +42,7 @@
                 <li><a href="#">News & Events</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li>
-                    <a class="btn btn-default header-btn"  data-toggle="collapse" href="#" aria-expanded="false" aria-controls="nav-collapse4">Request Proposal</a>
+                    <a class="btn btn-default header-btn" href="request-proposal.html">Request Proposal</a>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -87,12 +87,57 @@
                <p>Having effectively managed nearly 7,000 policies, ASG has perfected its ability to manage all aspects of your portfolio. ASG’s life settlement experience and policy expertise is the perfect complement to the financial expertise of its clients. </p>
                <a data-toggle="modal" data-target="#policy-mgmt"><b>Read More →</b></a>
 
+               <div class="modal fade" id="policy-mgmt" tabindex="-1" role="dialog" aria-labelledby="policy-mgmt" aria-hidden="true">
+                   <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                           <div class="modal-header"><img src="assets/images/icons/policy-mgmt.png" class="img-responsive" alt="premium optimization icon" style="float: left;" />
+                               <h5 class="modal-title" id="exampleModalLabel">Policy and Portfolio Management</h5>
+                               <button style="color: white;" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                   <span aria-hidden="true">&times;</span>
+                               </button>
+                           </div>
+                           <div class="modal-body">
+                               <p>Recognizing opportunities to minimize expenses while maintaining the integrity of the asset is key. Our team of portfolio managers have well over ten years of experience in life settlements, including:</p>
+                               <ul>
+                                   <li><span style="color: #3a3a3a;"><span style="font-family: Arial, serif;"><span style="font-size: medium;"><b>Thoroughly reviewing each policy contract</b></span></span></span><span style="color: #3a3a3a;"><span style="font-family: Arial, serif;"><span style="font-size: medium;"> to ensure that all options and riders are recognized and considered, including critical information such as maturity dates, maturity extension riders, lapse/grace triggers and secondary guarantees.</span></span></span></li>
+                                   <li><span style="color: #3a3a3a;"><span style="font-family: Arial, serif;"><span style="font-size: medium;"><b>Annual reevaluation of optimized premium schedules,</b></span></span></span><span style="color: #3a3a3a;"><span style="font-family: Arial, serif;"><span style="font-size: medium;"> which includes a review of projected rate increases, policy expense charges, premium load costs and No Lapse Guarantees, if applicable, to ensure that the optimized premium schedule is providing the client with the best possible cost savings.</span></span></span><b> </b></li>
+                                   <li><span style="color: #3a3a3a;"><span style="font-family: Arial, serif;"><span style="font-size: medium;"><b>Premium payment administration and confirmation</b></span></span></span><span style="color: #3a3a3a;"><span style="font-family: Arial, serif;"><span style="font-size: medium;">.</span></span></span></li>
+                                   <li><span style="color: #3a3a3a;"><span style="font-family: Arial, serif;"><span style="font-size: medium;"><b>Effectively managing carrier issues and communications.</b></span></span></span></li>
+                                   <li><span style="color: #3a3a3a;"><span style="font-family: Arial, serif;"><span style="font-size: medium;"><b>Optimizing returns through effective death claims processing</b></span></span></span><span style="color: #3a3a3a;"><span style="font-family: Arial, serif;"><span style="font-size: medium;">. Having processed nearly 1000 death claims, ASG’s experience will ensure that death certificates, and ultimately the claims proceeds, are received as quickly as possible.</span></span></span></li>
+                               </ul>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
            </div>
            <div class="col-md-4">
                <img src="assets/images/icons/premium-admin.png" class="img-responsive" style="float: left;"/>
                <h3>Premium Administration</h3><br>
                <p>Through stringent procedures in place, ASG ensures that premium payments are sent timely and also applied accurately by the carrier according to your desired payment methods and frequency.</p>
                <a data-toggle="modal" data-target="#premium-admin"><b>Read More →</b></a>
+           </div>
+           <div class="modal fade" id="premium-admin" tabindex="-1" role="dialog" aria-labelledby="premium-admin" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                   <div class="modal-content">
+                       <div class="modal-header"><img src="assets/images/icons/premium-admin.png" class="img-responsive" alt="premium optimization icon" style="float: left;" />
+                           <h5 class="modal-title" id="exampleModalLabel">Premium Administration</h5>
+                           <button style="color: white;" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                               <span aria-hidden="true">&times;</span>
+                           </button>
+                       </div>
+                       <div class="modal-body">
+                           <p>Through stringent procedures in place, ASG ensures that premium payments are sent timely and also applied accurately by the carrier according to your desired payment methods and frequency.</p>
+                           <p>Paying thousands of premiums per month has allowed ASG to refine its processes, resulting in services that are implemented more effectively and efficiently. The invoicing and reporting of premium payments will be specific to your needs to assist in the necessary tracking and reporting of the asset.</p>
+                       </div>
+                       <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                       </div>
+                   </div>
+               </div>
            </div>
        </div>
 
@@ -103,19 +148,82 @@
         <h3>Custodial Services</h3><br>
         <p>ASG continually maintains and stores portfolio policy files as well as monitors documents through continuous collateral tracking for safekeeping.</p>
         <a data-toggle="modal" data-target="#cust-services"><b>Read More →</b></a>
+        <div class="modal fade" id="cust-services" tabindex="-1" role="dialog" aria-labelledby="cust-services" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header"><img src="assets/images/icons/custodial-services.png" class="img-responsive" alt="premium optimization icon" style="float: left;" />
+                        <h5 class="modal-title" id="exampleModalLabel">Custodial Services</h5>
+                        <button style="color: white;" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>ASG continually maintains and stores portfolio policy files as well as monitors documents through continuous collateral tracking for safekeeping of your data and documents.</p>
+                        <p>&nbsp;</p>
+                        <p>ASG continually maintains and stores portfolio policy files as well as monitors documents through continuous collateral tracking. In addition, all trailing documents pertaining to each policy will be reviewed, scanned, and maintained appropriately. ASG provides this service with the utmost commitment to personal service while focusing on quality, accountability, reliability, and security.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="col-md-4">
         <img src="assets/images/icons/mortality-tracking.png" class="img-responsive" style="float: left;"/>
         <h3>Mortality Tracking</h3><br>
         <p>Insured cooperation can be challenging. By utilizing a combination of direct contact with the insured and reliable third-party data systems, ASG delivers timely and accurate results.</p>
         <a data-toggle="modal" data-target="#mortality-tracking"><b>Read More →</b></a>
+        <div class="modal fade" id="mortality-tracking" tabindex="-1" role="dialog" aria-labelledby="mortality-tracking" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header"><img src="assets/images/icons/mortality-tracking.png" class="img-responsive" alt="premium optimization icon" style="float: left;" />
+                        <h5 class="modal-title" id="exampleModalLabel">Mortality Tracking</h5>
+                        <button style="color: white;" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p style="text-align: left;">Insured cooperation can be challenging. By utilizing a combination of direct contact with the insured and reliable third-party data systems, ASG delivers timely and accurate results.</p>
+                        <p style="text-align: left;">Untimely demise discoveries can be costly! Over the last 15 years, ASG has established a highly effective approach to insured tracking to ensure that each insured is monitored effectively and efficiently utilizing a variety of tested systems.</p>
+                        <h4 style="text-align: left;"><strong>Insured Communications</strong></h4>
+                        <p style="text-align: left;">ASG also makes periodic contact with each insured to ensure that accurate and up-to-date information is on record.  Timely access to this information can be vitally important.</p>
+                        <h4 class="uvc-sub-heading ult-responsive" style="text-align: left;" data-ultimate-target=".uvc-heading.ultimate-heading-8635598333fc4e50e .uvc-sub-heading " data-responsive-json-new="{&quot;font-size&quot;:&quot;&quot;,&quot;line-height&quot;:&quot;&quot;}"><strong>Death Claims</strong></h4>
+                        <p>&nbsp;</p>
+                        <p style="text-align: left;">ASG’s skilled personnel have processed nearly a thousand death claims. The efficiency and accuracy used in requesting death certificates and filing death claims is crucial to ensure that death benefits are received as soon as possible, which in turn, optimizes returns for you, the client.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
     <div class="col-md-4">
         <img src="assets/images/icons/consulting.png" class="img-responsive" style="float: left;"/>
         <h3>Consulting and Due Diligence</h3><br>
         <p>The ASG team has provided a variety of clients, including banks, funds, and court appointed receivers and trustees, with the industry expertise necessary to evaluate, stabilize and manage portfolios of settled policies.</p>
-        <a data-toggle="modal" data-target="#policy-mgmt"><b>Read More →</b></a>
+        <a data-toggle="modal" data-target="#consulting"><b>Read More →</b></a>
+        <div class="modal fade" id="consulting" tabindex="-1" role="dialog" aria-labelledby="consulting" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header"><img src="assets/images/icons/consulting.png" class="img-responsive" alt="premium optimization icon" style="float: left;" />
+                        <h5 class="modal-title" id="exampleModalLabel">Consulting and Due Diligence</h5>
+                        <button style="color: white;" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                       <p>Understanding your asset and the risk associated with it is imperative. ASG’s experience in the Life Settlement industry has led to the ability to quickly identify several critical factors that should be considered for the appropriate valuation of a portfolio &#8211; both before and after purchase.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 </section>
@@ -127,7 +235,7 @@
             <h2 class="text-center" style="color: white;">Want to learn more?</h2>
         </div>
     <div class="col-md-6"
-            <p class="text-center"><a href="#" class="btn btn-primary">Contact Us</a></p>
+            <p class="text-right"><a href="#" class="btn header-btn">Contact Us</a></p>
     </div>
         </div>
 
@@ -167,44 +275,58 @@
             </p>
             <p class="footer-title">  Connect with Us<br></p>
 
-            <a href="mailto:#"><i class="fas fa-envelope-square fa-3x"></i></a>
-            <a href="mailto:#"><i class="fab fa-linkedin fa-3x"></i></a>
+            <a href="mailto:info@asgllc.us"><i class="fas fa-envelope-square fa-3x"></i></a>
+            <a href="https://www.linkedin.com/company/asset-servicing-group/"><i class="fab fa-linkedin fa-3x"></i></a>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 hidden-xs-small">
             <p class="footer-title">Services</p>
             <ul class="footer-links">
-                <li class="footer-items"><a href="#">Life Settlement Services</a></li>
-                <li class="footer-items"><a href="#">Claims & Noticing Services</a></li>
-                <li class="footer-items"><a href="#">Technology</a></li>
-                <li class="footer-items"><a href="#">News & Events</a></li>
+                <li class="footer-items"><a href="life-settlement-services.html">Life Settlement Services</a></li>
+                <li class="footer-items"><a href="legal-administration.html">Claims & Noticing Services</a></li>
+                <li class="footer-items"><a href="technology.html">Technology</a></li>
+                <li class="footer-items"><a href="news-events.html">News & Events</a></li>
             </ul>
             <br>
             <br>
             <p class="footer-title">Memberships</p>
             <img src="assets/images/memberships/LISA-WHITE.png" class="img-responsive" alt="LISA Logo"/>
 
+
+        </div>
+        <div class="col-md-3 vertical-align">
+            <img src="assets/images/memberships/ILMA-white.png" class="img-responsive" alt="" />
+        </div>
+        <div class="col-md-3 vertical-align">
+            <img src="assets/images/memberships/NAFER.png" class="img-responsive" alt="" />
         </div>
 
 
     </div>
 
-
-<script type="text/javascript" src="../index.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-<script>
-    $( document ).ready(function() {
-        console.log( "ready!" );
-    });
-    $('.statistic-counter').counterUp({
-        delay: 10,
-        time: 2000
-    });
-</script>
-</footer>
+    <script>
+        $('.navbar .dropdown > a').click(function(){
+            location.href = this.href;
+        });
+
+    </script>
+    <script>
+        $( document ).ready(function() {
+            console.log( "ready!" );
+        });
+        $('.statistic-counter').counterUp({
+            delay: 10,
+            time: 2000
+        });
+    </script>
+        </footer>
 </body>
 </html>
+
+
